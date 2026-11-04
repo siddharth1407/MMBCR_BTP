@@ -1,0 +1,268 @@
+{
+  "description": "Inverse kinetic parameter discovery from real Upham et al. (Science 2017) experimental data \u2013 no synthetic data used.",
+  "data_source": "Upham et al., Science 358, 917-921 (2017)",
+  "reactor_conditions": {
+    "temperature_C": 1040.0,
+    "pressure_bar": 2.0,
+    "feed_composition": "80/20 CH4/Ar",
+    "diameter_m": 0.03,
+    "height_m": 1.15
+  },
+  "experimental_data": {
+    "n_points": 12,
+    "heights_m": [
+      0.03,
+      0.08,
+      0.15,
+      0.24,
+      0.36,
+      0.45,
+      0.53,
+      0.63,
+      0.74,
+      0.82,
+      0.93,
+      1.13
+    ],
+    "conversions_pct": [
+      4.5,
+      13.8,
+      25.2,
+      41.0,
+      53.5,
+      62.0,
+      66.5,
+      72.5,
+      78.0,
+      82.0,
+      85.5,
+      89.8
+    ],
+    "note": "Real measured values \u2013 no added noise"
+  },
+  "inverse_algorithm": {
+    "method": "Trust-Region Reflective (TRF) least-squares",
+    "initial_guess_kJ_mol": 140.0,
+    "initial_error_pct": 32.69230769230769,
+    "bounds_kJ_mol": [
+      80.0,
+      350.0
+    ],
+    "diff_step_kJ_mol": 0.5,
+    "function_evaluations": 26,
+    "optimizer_status": 3
+  },
+  "parameter_estimation": {
+    "parameter": "Ea_cat (Catalytic Activation Energy)",
+    "discovered_kJ_mol": 207.8965,
+    "std_error_kJ_mol": 0.7657,
+    "ci_95_kJ_mol": 1.5008,
+    "confidence_interval_95_pct": [
+      206.3957,
+      209.3972
+    ],
+    "literature_value_kJ_mol": 208.0,
+    "absolute_error_kJ_mol": 0.1035,
+    "relative_error_pct": 0.0498,
+    "literature_value_enclosed_in_95_CI": true
+  },
+  "fit_metrics_vs_real_data": {
+    "R_squared": 0.998651,
+    "RMSE_pct_points": 1.0174,
+    "MAE_pct_points": 0.8555,
+    "MAPE_pct": 5.0303,
+    "RSS": 12.420391
+  },
+  "optimisation_history": [
+    {
+      "eval": 1,
+      "ea_kj": 140.0,
+      "cost": 14997.05747932865
+    },
+    {
+      "eval": 2,
+      "ea_kj": 210.0,
+      "cost": 122.75170895349294
+    },
+    {
+      "eval": 3,
+      "ea_kj": 190.4074,
+      "cost": 5676.354898187002
+    },
+    {
+      "eval": 4,
+      "ea_kj": 285.611,
+      "cost": 10362.17121932987
+    },
+    {
+      "eval": 5,
+      "ea_kj": 222.0989,
+      "cost": 3817.2094443664005
+    },
+    {
+      "eval": 6,
+      "ea_kj": 333.1483,
+      "cost": 10390.419666520287
+    },
+    {
+      "eval": 7,
+      "ea_kj": 145.8655,
+      "cost": 14996.64139513235
+    },
+    {
+      "eval": 8,
+      "ea_kj": 203.0405,
+      "cost": 619.3048532247524
+    },
+    {
+      "eval": 9,
+      "ea_kj": 304.5608,
+      "cost": 10385.738179288091
+    },
+    {
+      "eval": 10,
+      "ea_kj": 219.9767,
+      "cost": 2999.016461612901
+    },
+    {
+      "eval": 11,
+      "ea_kj": 207.2746,
+      "cost": 16.53804554422996
+    },
+    {
+      "eval": 12,
+      "ea_kj": 310.9119,
+      "cost": 10387.96514815897
+    },
+    {
+      "eval": 13,
+      "ea_kj": 210.3183,
+      "cost": 160.1575762984125
+    },
+    {
+      "eval": 14,
+      "ea_kj": 208.0355,
+      "cost": 6.721334906239601
+    },
+    {
+      "eval": 15,
+      "ea_kj": 312.0533,
+      "cost": 10388.245323326895
+    },
+    {
+      "eval": 16,
+      "ea_kj": 207.3929,
+      "cost": 12.979432271626166
+    },
+    {
+      "eval": 17,
+      "ea_kj": 207.8749,
+      "cost": 6.216517358725314
+    },
+    {
+      "eval": 18,
+      "ea_kj": 311.8123,
+      "cost": 10388.188580517639
+    },
+    {
+      "eval": 19,
+      "ea_kj": 208.0479,
+      "cost": 6.817124039788229
+    },
+    {
+      "eval": 20,
+      "ea_kj": 207.9181,
+      "cost": 6.216856126348925
+    },
+    {
+      "eval": 21,
+      "ea_kj": 207.8857,
+      "cost": 6.2072341040645655
+    },
+    {
+      "eval": 22,
+      "ea_kj": 311.8285,
+      "cost": 10388.192438905751
+    },
+    {
+      "eval": 23,
+      "ea_kj": 207.9073,
+      "cost": 6.207403582607424
+    },
+    {
+      "eval": 24,
+      "ea_kj": 207.8911,
+      "cost": 6.204934700049855
+    },
+    {
+      "eval": 25,
+      "ea_kj": 311.8366,
+      "cost": 10388.194365874519
+    },
+    {
+      "eval": 26,
+      "ea_kj": 207.9019,
+      "cost": 6.205019449812427
+    },
+    {
+      "eval": 27,
+      "ea_kj": 207.8938,
+      "cost": 6.204370470816762
+    },
+    {
+      "eval": 28,
+      "ea_kj": 311.8407,
+      "cost": 10388.195328804106
+    },
+    {
+      "eval": 29,
+      "ea_kj": 207.8992,
+      "cost": 6.204412847036101
+    },
+    {
+      "eval": 30,
+      "ea_kj": 207.8951,
+      "cost": 6.204234714043712
+    },
+    {
+      "eval": 31,
+      "ea_kj": 311.8427,
+      "cost": 10388.195810130266
+    },
+    {
+      "eval": 32,
+      "ea_kj": 207.8965,
+      "cost": 6.20419652546252
+    },
+    {
+      "eval": 33,
+      "ea_kj": 311.8447,
+      "cost": 10388.196291361783
+    },
+    {
+      "eval": 34,
+      "ea_kj": 207.8968,
+      "cost": 6.20420222292452
+    },
+    {
+      "eval": 35,
+      "ea_kj": 207.8966,
+      "cost": 6.204197377544799
+    },
+    {
+      "eval": 36,
+      "ea_kj": 207.8965,
+      "cost": 6.204196702617114
+    },
+    {
+      "eval": 37,
+      "ea_kj": 207.8965,
+      "cost": 6.204196567268039
+    },
+    {
+      "eval": 38,
+      "ea_kj": 207.8965,
+      "cost": 6.204196535532397
+    }
+  ]
+}

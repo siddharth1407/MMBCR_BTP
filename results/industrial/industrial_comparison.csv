@@ -1,0 +1,10 @@
+metric,model_value,paper_reference,relative_error_pct,note
+reaction_only_conversion_pct,75.47872239436735,80.0,-5.6515970070408095,paper reports ~80% at 2.11 m
+heat_transfer_conversion_pct,75.47686382423244,80.0,-5.653920219709452,paper reports ~80% at 2.11 m
+reaction_only_outlet_pressure_bar,16.120115007501028,16.0,0.7507187968814222,paper figure shows approximately 16 bar class pressure at outlet
+reaction_only_outlet_gas_velocity_mm_s,119.90596014993461,155.0,-22.64131603230025,reported at XM=80%
+reaction_only_outlet_bubble_diameter_mm,2.8776503593993783,2.79,3.1415899426300453,reported at XM=80%
+reaction_only_outlet_specific_area_m2_m3,2085.0344032943312,2152.0,-3.111784233534794,reported at XM=80%
+coupled_axial_dispersion_conversion_pct,67.67383427751875,66.0,2.5361125416950765,paper reports ~66% at 2.11 m with axial dispersion
+coupled_axial_dispersion_inlet_jump_pct,13.831092896266616,10.0,38.31092896266616,paper Fig. 12 shows ~10% conversion jump at h=0 due to backmixing
+coupled_outlet_pressure_bar,16.138352570934437,16.0,0.8647035683402304,paper reports ~16 bar outlet pressure (deltaP ~1.7 bar)

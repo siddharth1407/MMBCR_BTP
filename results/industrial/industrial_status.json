@@ -1,0 +1,42 @@
+{
+  "case": {
+    "D_m": 0.1,
+    "H_m": 2.11,
+    "P_in_bar": 17.84,
+    "T_G_in_C": 800.0,
+    "T_L_in_C": 1050.0,
+    "j_CH4_in": 0.1606
+  },
+  "reaction_only": {
+    "X_out_pct": 75.47872239436735,
+    "P_out_bar": 16.120115007501028,
+    "uG_out_mm_s": 119.90596014993461,
+    "aG_out_pct": 9.304718244818936,
+    "d_b_out_mm": 2.8776503593993783,
+    "a_s_out_m2_m3": 2085.0344032943312
+  },
+  "heat_transfer": {
+    "X_out_pct": 75.47686382423244
+  },
+  "full_coupled": {
+    "attempted": true,
+    "success": true,
+    "message": "Converged in 10 iterations",
+    "X_in_pct": 13.831092896266616,
+    "X_out_pct": 67.67383427751875,
+    "P_out_bar": 16.138352570934437,
+    "aG_out_pct": 8.866197238450802,
+    "uG_out_mm_s": 114.0657237720177,
+    "Dax_out_m2_s": 1.35
+  },
+  "paper_reference": {
+    "X_out_pct_no_axial_dispersion": 80.0,
+    "X_out_pct_with_axial_dispersion": 66.0,
+    "aG_at_80_pct_pct": 14.3,
+    "uG_at_80_pct_mm_s": 155.0,
+    "db_at_80_pct_mm": 2.79,
+    "as_at_80_pct_m2_m3": 2152.0,
+    "H_m": 2.11,
+    "D_m": 0.1
+  }
+}

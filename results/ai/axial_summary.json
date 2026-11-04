@@ -1,0 +1,25 @@
+{
+  "model": "Data-assisted sparse neural surrogate with post-hoc axial mass-balance audit",
+  "train_points": 32,
+  "held_out_points": 391,
+  "reference_X_out_pct": 90.03332933779701,
+  "ai_X_out_pct": 90.15873771415552,
+  "validation_conversion": {
+    "mae": 0.41426857844794557,
+    "rmse": 0.6213218117376011,
+    "max": 2.6798944403875655,
+    "out": 90.13402027350834,
+    "ref_out": 90.02977538452001
+  },
+  "all_domain_conversion": {
+    "mae": 0.41349194419183716,
+    "rmse": 0.619419053347703,
+    "max": 2.6798944403875655,
+    "out": 90.15873771415552,
+    "ref_out": 90.03332933779701
+  },
+  "physics_rms": {
+    "CH4": 1.0531776997937048,
+    "H2": 1.102307152009082
+  }
+}

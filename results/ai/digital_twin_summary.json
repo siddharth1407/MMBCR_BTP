@@ -1,0 +1,59 @@
+{
+  "framework": "Multi-Condition MMBCR Digital Twin Operator",
+  "dataset": {
+    "total_operating_conditions": 400,
+    "train_cases": 320,
+    "test_cases": 80,
+    "operating_envelope": {
+      "temperature_C": [
+        950.0,
+        1150.0
+      ],
+      "pressure_bar": [
+        1.0,
+        20.0
+      ],
+      "superficial_velocity_m_s": [
+        0.015,
+        0.2
+      ],
+      "height_m": [
+        0.5,
+        2.5
+      ],
+      "diameter_m": [
+        0.03,
+        0.12
+      ],
+      "methane_mole_fraction": [
+        0.75,
+        1.0
+      ]
+    }
+  },
+  "models": {
+    "gradient_boosting": {
+      "r_squared": 0.9701,
+      "rmse_percentage_points": 3.724,
+      "mae_percentage_points": 2.864
+    },
+    "neural_mlp": {
+      "r_squared": 0.8712,
+      "rmse_percentage_points": 7.732,
+      "mae_percentage_points": 5.588
+    }
+  },
+  "feature_importances": {
+    "temperature_C": 0.4843,
+    "diameter_m": 0.3207,
+    "height_m": 0.1447,
+    "superficial_velocity_m_s": 0.0355,
+    "pressure_bar": 0.0125,
+    "methane_mole_fraction": 0.0022
+  },
+  "performance": {
+    "inference_latency_microseconds": 119.78,
+    "ode_solve_latency_milliseconds": 4.2,
+    "speedup_factor": 35.1
+  }
+}

@@ -1,0 +1,5 @@
+stage,model,scope,reference_X_out_pct,ai_X_out_pct,conversion_MAE_pp,accepted
+8,Pure PINN,reaction-only,90.429164,90.109718,0.403425,True
+9,Hybrid neural surrogate,heat transfer,90.429367,89.457288,0.476425,True
+10,Hybrid physics-informed AI surrogate,axial-dispersion mass BVP,90.033329,89.7095,0.177,True
+10-PINN,Pure PINN attempt,axial-dispersion mass BVP,90.033329,85.150459,13.472045,False

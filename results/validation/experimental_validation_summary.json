@@ -1,0 +1,22 @@
+{
+  "experimental_source": "Upham et al. (Science 2017;358:917-921), Fig. 4 in Le et al. (2023)",
+  "operating_conditions": {
+    "temperature_C": 1040.0,
+    "pressure_bar": 2.0,
+    "feed_mol_pct": "80% CH4, 20% Ar",
+    "reactor_diameter_m": 0.03,
+    "reactor_height_m": 1.15
+  },
+  "number_of_experimental_points": 12,
+  "heat_transfer_model_metrics": {
+    "R2": 0.9985889162388516,
+    "RMSE_pp": 1.0403217759060193,
+    "MAE_pp": 0.8505218125903392,
+    "MAPE_pct": 4.891839995675324
+  },
+  "reaction_only_model_metrics": {
+    "R2": 0.9985885823439271,
+    "RMSE_pp": 1.0404448506747084,
+    "MAE_pp": 0.8505591542587597
+  }
+}

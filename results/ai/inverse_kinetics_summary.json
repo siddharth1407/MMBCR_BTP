@@ -1,0 +1,54 @@
+{
+  "method": "Physics-Informed Inverse Kinetic Discovery (Gauss-Newton/TRF)",
+  "physics_model": "Two-phase MMBCR (Le et al. 2023, Catalan & Rezaei)",
+  "reactor_conditions": {
+    "temperature_C": 1040.0,
+    "pressure_bar": 2.0,
+    "height_m": 1.15,
+    "diameter_m": 0.03
+  },
+  "sensor_setup": {
+    "n_sensors": 7,
+    "noise_std_pct": 2.0,
+    "sensor_locations_m": [
+      0.1,
+      0.27499999999999997,
+      0.44999999999999996,
+      0.6249999999999999,
+      0.7999999999999998,
+      0.9749999999999998,
+      1.15
+    ],
+    "measured_conversion_pct": [
+      18.770449914708006,
+      43.238018038307494,
+      61.39451873348994,
+      74.75683847732027,
+      80.41080022601663,
+      86.0782443434067,
+      93.28530150874101
+    ]
+  },
+  "parameter_estimation": {
+    "parameter_name": "Ea_cat (Catalytic Activation Energy)",
+    "true_value_kJ_mol": 208.0,
+    "initial_guess_kJ_mol": 120.0,
+    "initial_error_pct": 42.30769230769231,
+    "discovered_value_kJ_mol": 207.634,
+    "std_error_kJ_mol": 0.304,
+    "ci_95_kJ_mol": 0.596,
+    "confidence_interval_95": [
+      207.038,
+      208.231
+    ],
+    "true_value_enclosed_in_95_ci": true,
+    "absolute_error_kJ_mol": 0.366,
+    "relative_error_pct": 0.176,
+    "function_evaluations": 15
+  },
+  "fit_metrics": {
+    "r_squared": 0.9975,
+    "rmse_percentage_points": 1.234,
+    "residual_sum_of_squares": 10.6555
+  }
+}

@@ -1,0 +1,5 @@
+# Optional: Deep Learning Neural Surrogate Framework
+# Only install if training neural surrogates with heavy deep learning models (~1.5 GB).
+# The inverse physics-informed discovery engine runs natively without torch.
+torch>=2.1
+

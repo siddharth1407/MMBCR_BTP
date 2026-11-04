@@ -1,0 +1,35 @@
+# Python virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python cache & compiled bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+
+# Testing & temporary logs
+.pytest_cache/
+.coverage
+htmlcov/
+final_pytest.txt
+
+# OS & IDE metadata
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.vscode/
+.idea/
+*.swp
+*~
+
+# Third-party copyrighted literature & administrative guideline PDFs
+source_material/
+BTP_report_preparation_guidelines.pdf

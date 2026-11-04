@@ -1,0 +1,40 @@
+{
+  "model": "Data-assisted neural surrogate with post-hoc governing-equation audit",
+  "train_points": 80,
+  "held_out_points": 321,
+  "reference_X_out_pct": 90.42936660486968,
+  "ai_X_out_pct": 90.23042444069095,
+  "validation_conversion": {
+    "mae": 0.04486863214587914,
+    "rmse": 0.07263268708114626,
+    "max": 0.7434800261486574,
+    "out": 90.18123624594794,
+    "ref_out": 90.37544429589114
+  },
+  "all_domain_conversion": {
+    "mae": 0.04702753497412832,
+    "rmse": 0.08995520019654112,
+    "max": 1.1411466045349705,
+    "out": 90.23042444069095,
+    "ref_out": 90.42936660486968
+  },
+  "validation_temperature_C": {
+    "mae": 1.5421665961139404,
+    "rmse": 16.098893917041433,
+    "max": 218.69913648892418,
+    "out": 1039.9938506769604,
+    "ref_out": 1039.999956968737
+  },
+  "validation_pressure_bar": {
+    "mae": 0.0013281894150205425,
+    "rmse": 0.0032372203464768085,
+    "max": 0.021588926381675977,
+    "out": 0.9918519861136478,
+    "ref_out": 0.9887952347963065
+  },
+  "physics_rms": {
+    "mass": 0.015592727194964013,
+    "pressure": 0.07925226540055298,
+    "energy": 1967.8764170262903
+  }
+}
